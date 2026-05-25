@@ -19,4 +19,4 @@ SELECT * FROM df
 
 con.close()
 
-print("Ingestion terminée : ventes_raw créée dans DuckDB")
+print("Ingestion terminée : ventes_raw créée dans DuckDB") 
