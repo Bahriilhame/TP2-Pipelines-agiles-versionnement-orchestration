@@ -274,3 +274,198 @@ drop table if exists "ventes"."main"."ventes_resume__dbt_backup" cascade
 [0m15:46:14.145629 [debug] [MainThread]: Command `dbt run` succeeded at 15:46:14.145629 after 4.11 seconds
 [0m15:46:14.146944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B731D2A8A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B73251BBC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7325DA5D0>]}
 [0m15:46:14.146944 [debug] [MainThread]: Flushing usage events
+[0m16:29:38.854317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013161087170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000131610C9490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000131615A5E80>]}
+
+
+============================== 16:29:38.857765 | bf814e23-4dfc-47d3-bdaf-a6cc022ed3ef ==============================
+[0m16:29:38.857765 [info ] [MainThread]: Running with dbt=1.8.8
+[0m16:29:38.858764 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\m\\Desktop\\Master IA ben msik\\S2\\MLOps\\tds\\tp_chapitre2_pipeline\\dbt_pipeline\\logs', 'profiles_dir': '.', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt test --profiles-dir .', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:29:39.119586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bf814e23-4dfc-47d3-bdaf-a6cc022ed3ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013162633D40>]}
+[0m16:29:39.192789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bf814e23-4dfc-47d3-bdaf-a6cc022ed3ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001315EE7C470>]}
+[0m16:29:39.194751 [info ] [MainThread]: Registered adapter: duckdb=1.8.2
+[0m16:29:39.203835 [debug] [MainThread]: checksum: ec53e341a936509427e16df1c646386a84befec52c1957e3f4359fbc36fc93f5, vars: {}, profile: , target: , version: 1.8.8
+[0m16:29:39.440755 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m16:29:39.440755 [debug] [MainThread]: Partial parsing: added file: dbt_pipeline://models\schema.yml
+[0m16:29:39.509517 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m16:29:39.509517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'bf814e23-4dfc-47d3-bdaf-a6cc022ed3ef', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013162A00950>]}
+[0m16:29:39.791720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bf814e23-4dfc-47d3-bdaf-a6cc022ed3ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013162C4A0C0>]}
+[0m16:29:39.899331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bf814e23-4dfc-47d3-bdaf-a6cc022ed3ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001316303D040>]}
+[0m16:29:39.899331 [info ] [MainThread]: Found 2 models, 3 data tests, 416 macros
+[0m16:29:39.900540 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bf814e23-4dfc-47d3-bdaf-a6cc022ed3ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013163009490>]}
+[0m16:29:39.902871 [info ] [MainThread]: 
+[0m16:29:39.903870 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m16:29:39.907872 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ventes_main'
+[0m16:29:39.981469 [debug] [ThreadPool]: Using duckdb connection "list_ventes_main"
+[0m16:29:39.982468 [debug] [ThreadPool]: On list_ventes_main: BEGIN
+[0m16:29:39.982468 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:29:39.991048 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m16:29:39.992102 [debug] [ThreadPool]: Using duckdb connection "list_ventes_main"
+[0m16:29:39.992102 [debug] [ThreadPool]: On list_ventes_main: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "dbt_pipeline", "target_name": "dev", "connection_name": "list_ventes_main"} */
+select
+      'ventes' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main'
+    and table_catalog = 'ventes'
+  
+[0m16:29:40.022012 [debug] [ThreadPool]: SQL status: OK in 0.029 seconds
+[0m16:29:40.026999 [debug] [ThreadPool]: On list_ventes_main: ROLLBACK
+[0m16:29:40.028008 [debug] [ThreadPool]: Failed to rollback 'list_ventes_main'
+[0m16:29:40.029012 [debug] [ThreadPool]: On list_ventes_main: Close
+[0m16:29:40.033022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bf814e23-4dfc-47d3-bdaf-a6cc022ed3ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013162FDCE60>]}
+[0m16:29:40.033967 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:29:40.033967 [debug] [MainThread]: On master: BEGIN
+[0m16:29:40.033967 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:29:40.041715 [debug] [MainThread]: SQL status: OK in 0.008 seconds
+[0m16:29:40.042726 [debug] [MainThread]: On master: COMMIT
+[0m16:29:40.042726 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:29:40.043725 [debug] [MainThread]: On master: COMMIT
+[0m16:29:40.043725 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:29:40.043725 [debug] [MainThread]: On master: Close
+[0m16:29:40.046189 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:29:40.046189 [info ] [MainThread]: 
+[0m16:29:40.050274 [debug] [Thread-1 (]: Began running node test.dbt_pipeline.not_null_ventes_clean_produit.e7450b44b1
+[0m16:29:40.050274 [info ] [Thread-1 (]: 1 of 3 START test not_null_ventes_clean_produit ................................ [RUN]
+[0m16:29:40.051275 [debug] [Thread-1 (]: Acquiring new duckdb connection 'test.dbt_pipeline.not_null_ventes_clean_produit.e7450b44b1'
+[0m16:29:40.051275 [debug] [Thread-1 (]: Began compiling node test.dbt_pipeline.not_null_ventes_clean_produit.e7450b44b1
+[0m16:29:40.068586 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_pipeline.not_null_ventes_clean_produit.e7450b44b1"
+[0m16:29:40.071079 [debug] [Thread-1 (]: Began executing node test.dbt_pipeline.not_null_ventes_clean_produit.e7450b44b1
+[0m16:29:40.086299 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_pipeline.not_null_ventes_clean_produit.e7450b44b1"
+[0m16:29:40.087304 [debug] [Thread-1 (]: Using duckdb connection "test.dbt_pipeline.not_null_ventes_clean_produit.e7450b44b1"
+[0m16:29:40.088303 [debug] [Thread-1 (]: On test.dbt_pipeline.not_null_ventes_clean_produit.e7450b44b1: BEGIN
+[0m16:29:40.088303 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:29:40.095514 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m16:29:40.095514 [debug] [Thread-1 (]: Using duckdb connection "test.dbt_pipeline.not_null_ventes_clean_produit.e7450b44b1"
+[0m16:29:40.096680 [debug] [Thread-1 (]: On test.dbt_pipeline.not_null_ventes_clean_produit.e7450b44b1: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "dbt_pipeline", "target_name": "dev", "node_id": "test.dbt_pipeline.not_null_ventes_clean_produit.e7450b44b1"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select produit
+from "ventes"."main"."ventes_clean"
+where produit is null
+
+
+
+      
+    ) dbt_internal_test
+[0m16:29:40.096680 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:29:40.101855 [debug] [Thread-1 (]: On test.dbt_pipeline.not_null_ventes_clean_produit.e7450b44b1: ROLLBACK
+[0m16:29:40.102911 [debug] [Thread-1 (]: Failed to rollback 'test.dbt_pipeline.not_null_ventes_clean_produit.e7450b44b1'
+[0m16:29:40.102911 [debug] [Thread-1 (]: On test.dbt_pipeline.not_null_ventes_clean_produit.e7450b44b1: Close
+[0m16:29:40.105360 [info ] [Thread-1 (]: 1 of 3 PASS not_null_ventes_clean_produit ...................................... [[32mPASS[0m in 0.06s]
+[0m16:29:40.106373 [debug] [Thread-1 (]: Finished running node test.dbt_pipeline.not_null_ventes_clean_produit.e7450b44b1
+[0m16:29:40.106373 [debug] [Thread-1 (]: Began running node test.dbt_pipeline.not_null_ventes_clean_quantite.9f460671c8
+[0m16:29:40.107412 [info ] [Thread-1 (]: 2 of 3 START test not_null_ventes_clean_quantite ............................... [RUN]
+[0m16:29:40.107412 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_pipeline.not_null_ventes_clean_produit.e7450b44b1, now test.dbt_pipeline.not_null_ventes_clean_quantite.9f460671c8)
+[0m16:29:40.108429 [debug] [Thread-1 (]: Began compiling node test.dbt_pipeline.not_null_ventes_clean_quantite.9f460671c8
+[0m16:29:40.112662 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_pipeline.not_null_ventes_clean_quantite.9f460671c8"
+[0m16:29:40.113663 [debug] [Thread-1 (]: Began executing node test.dbt_pipeline.not_null_ventes_clean_quantite.9f460671c8
+[0m16:29:40.116661 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_pipeline.not_null_ventes_clean_quantite.9f460671c8"
+[0m16:29:40.117656 [debug] [Thread-1 (]: Using duckdb connection "test.dbt_pipeline.not_null_ventes_clean_quantite.9f460671c8"
+[0m16:29:40.118739 [debug] [Thread-1 (]: On test.dbt_pipeline.not_null_ventes_clean_quantite.9f460671c8: BEGIN
+[0m16:29:40.118739 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:29:40.126751 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m16:29:40.127255 [debug] [Thread-1 (]: Using duckdb connection "test.dbt_pipeline.not_null_ventes_clean_quantite.9f460671c8"
+[0m16:29:40.127255 [debug] [Thread-1 (]: On test.dbt_pipeline.not_null_ventes_clean_quantite.9f460671c8: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "dbt_pipeline", "target_name": "dev", "node_id": "test.dbt_pipeline.not_null_ventes_clean_quantite.9f460671c8"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select quantite
+from "ventes"."main"."ventes_clean"
+where quantite is null
+
+
+
+      
+    ) dbt_internal_test
+[0m16:29:40.128259 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:29:40.129714 [debug] [Thread-1 (]: On test.dbt_pipeline.not_null_ventes_clean_quantite.9f460671c8: ROLLBACK
+[0m16:29:40.130727 [debug] [Thread-1 (]: Failed to rollback 'test.dbt_pipeline.not_null_ventes_clean_quantite.9f460671c8'
+[0m16:29:40.132009 [debug] [Thread-1 (]: On test.dbt_pipeline.not_null_ventes_clean_quantite.9f460671c8: Close
+[0m16:29:40.134023 [info ] [Thread-1 (]: 2 of 3 PASS not_null_ventes_clean_quantite ..................................... [[32mPASS[0m in 0.03s]
+[0m16:29:40.135048 [debug] [Thread-1 (]: Finished running node test.dbt_pipeline.not_null_ventes_clean_quantite.9f460671c8
+[0m16:29:40.136047 [debug] [Thread-1 (]: Began running node test.dbt_pipeline.not_null_ventes_resume_categorie.3011a2f699
+[0m16:29:40.136047 [info ] [Thread-1 (]: 3 of 3 START test not_null_ventes_resume_categorie ............................. [RUN]
+[0m16:29:40.137043 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_pipeline.not_null_ventes_clean_quantite.9f460671c8, now test.dbt_pipeline.not_null_ventes_resume_categorie.3011a2f699)
+[0m16:29:40.138530 [debug] [Thread-1 (]: Began compiling node test.dbt_pipeline.not_null_ventes_resume_categorie.3011a2f699
+[0m16:29:40.142769 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_pipeline.not_null_ventes_resume_categorie.3011a2f699"
+[0m16:29:40.143770 [debug] [Thread-1 (]: Began executing node test.dbt_pipeline.not_null_ventes_resume_categorie.3011a2f699
+[0m16:29:40.146248 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_pipeline.not_null_ventes_resume_categorie.3011a2f699"
+[0m16:29:40.148244 [debug] [Thread-1 (]: Using duckdb connection "test.dbt_pipeline.not_null_ventes_resume_categorie.3011a2f699"
+[0m16:29:40.148244 [debug] [Thread-1 (]: On test.dbt_pipeline.not_null_ventes_resume_categorie.3011a2f699: BEGIN
+[0m16:29:40.149271 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:29:40.161196 [debug] [Thread-1 (]: SQL status: OK in 0.012 seconds
+[0m16:29:40.162198 [debug] [Thread-1 (]: Using duckdb connection "test.dbt_pipeline.not_null_ventes_resume_categorie.3011a2f699"
+[0m16:29:40.162198 [debug] [Thread-1 (]: On test.dbt_pipeline.not_null_ventes_resume_categorie.3011a2f699: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "dbt_pipeline", "target_name": "dev", "node_id": "test.dbt_pipeline.not_null_ventes_resume_categorie.3011a2f699"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select categorie
+from "ventes"."main"."ventes_resume"
+where categorie is null
+
+
+
+      
+    ) dbt_internal_test
+[0m16:29:40.164196 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:29:40.166343 [debug] [Thread-1 (]: On test.dbt_pipeline.not_null_ventes_resume_categorie.3011a2f699: ROLLBACK
+[0m16:29:40.167339 [debug] [Thread-1 (]: Failed to rollback 'test.dbt_pipeline.not_null_ventes_resume_categorie.3011a2f699'
+[0m16:29:40.168349 [debug] [Thread-1 (]: On test.dbt_pipeline.not_null_ventes_resume_categorie.3011a2f699: Close
+[0m16:29:40.171343 [info ] [Thread-1 (]: 3 of 3 PASS not_null_ventes_resume_categorie ................................... [[32mPASS[0m in 0.03s]
+[0m16:29:40.173862 [debug] [Thread-1 (]: Finished running node test.dbt_pipeline.not_null_ventes_resume_categorie.3011a2f699
+[0m16:29:40.174873 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:29:40.175886 [debug] [MainThread]: On master: BEGIN
+[0m16:29:40.175886 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:29:40.182871 [debug] [MainThread]: SQL status: OK in 0.007 seconds
+[0m16:29:40.182871 [debug] [MainThread]: On master: COMMIT
+[0m16:29:40.184239 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:29:40.184239 [debug] [MainThread]: On master: COMMIT
+[0m16:29:40.185251 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:29:40.185251 [debug] [MainThread]: On master: Close
+[0m16:29:40.188492 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:29:40.188492 [debug] [MainThread]: Connection 'list_ventes_main' was properly closed.
+[0m16:29:40.188492 [debug] [MainThread]: Connection 'test.dbt_pipeline.not_null_ventes_resume_categorie.3011a2f699' was properly closed.
+[0m16:29:40.190003 [info ] [MainThread]: 
+[0m16:29:40.190003 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 0.29 seconds (0.29s).
+[0m16:29:40.191132 [debug] [MainThread]: Command end result
+[0m16:29:40.225450 [info ] [MainThread]: 
+[0m16:29:40.225450 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:29:40.226483 [info ] [MainThread]: 
+[0m16:29:40.226483 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m16:29:40.228487 [debug] [MainThread]: Command `dbt test` succeeded at 16:29:40.227445 after 1.52 seconds
+[0m16:29:40.228487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013162C142C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000131625F7B60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001315EEDB950>]}
+[0m16:29:40.228487 [debug] [MainThread]: Flushing usage events

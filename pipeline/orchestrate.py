@@ -14,24 +14,17 @@ def validate():
 
 @op
 def transform():
-    os.system(
-        "cd dbt_pipeline && dbt run --profiles-dir ."
-    )
+    os.system("cd dbt_pipeline && dbt run --profiles-dir .")
 
 
 @op
 def test_data():
-    os.system(
-        "cd dbt_pipeline && dbt test --profiles-dir ."
-    )
+    os.system("cd dbt_pipeline && dbt test --profiles-dir .")
 
 
 @job
 def ventes_pipeline():
-    test_data(
-        transform(
-            validate(
-                ingest()
-            )
-        )
-    )
+    ingest()
+    validate()
+    transform()
+    test_data()
